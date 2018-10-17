@@ -1,0 +1,369 @@
+physical_constants_dictionary:
+  version_number: 0.0.0
+  institution: National ESPC/NUOPC
+  description: Community-based dictionary for consistent physical constant sets
+  contact: National ESPC
+  set:
+    - ASHandbook1964:
+        description: "
+          Common mathematical constants.
+        "
+        citation: "
+          Abramowitz, A., and Stegun, I.A., Handbook of Mathematical Functions
+          With Formulas, Graphs, and Mathematical Tables, DOC/National Bureau of Standards,
+          Applied Mathematics Series, 55, June 1964.
+        "
+        entries:
+          - name: pi
+            value: 3.141592653589793238462643
+            units: none
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Ratio of a circle's circumference to its diameter.
+            "
+          - name: e
+            value: 2.718281828459045235360287
+            units: none
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Base of natural logarithms.
+            "
+          - name: gamma
+            value: 0.577215664901532860606512
+            units: none
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Euler-Mascheroni constant.
+            "
+          - name: radian
+            value: 57.295779513082320876798155
+            units: degree
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Radian to degrees conversion factor.
+            "
+          - name: degree
+            value: 0.017453292519943295769237
+            units: rad
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Degree to radiant conversion factor.
+            "
+          - name: square_root_of_2
+            value: 1.4142135623730950488
+            units: rad
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Square root of 2.
+            "
+          - name: square_root_of_3
+            value: 1.7320508075688772935
+            units: rad
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Square root of 3.
+            "
+    - CODATA2014:
+        description: "
+          CODATA Recommended Values of the Fundamental Physical Constants: 2014
+        "
+        citation: "
+          Mohr, P.J., Newell, D.B., and Taylor, B.N., J. Phys. Chem. Ref. Data 45,
+          043102 (2016); doi: 10.1063/1.4954402
+        "
+        entries:
+          - name: speed_of_light_in_vacuum
+            value: 299792458
+            units: m s-1
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              The speed at which light propagates in vacuum.
+              Albert Einstein postulated that the speed of light with respect to
+              an inertial frame is independent of the motion of the light source.
+            "
+          - name: newtonian_gravitation_constant
+            value: 6.6740831E-11
+            units: m3 kg-1 s-2
+            prec: double
+            type: strict
+            relative_uncertainty: 4.7E-05
+            description: "
+              Empirical constant used to calculate the attractive force between
+              two bodies according to Newton's law of universal gravitation.
+            "
+          - name: standard_acceleration_of_gravity
+            value: 9.80665
+            units: m s-2
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Nominal acceleration of an object in a vacuum at sea level at a
+              geodetic latitude of 45 degrees.
+            "
+          - name: standard_atmosphere
+            value: 101325
+            units: Pa
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Unit of pressure equivalent to 760 mmHg (torr), 29.92 inches Hg and 14.696 psi.
+            "
+          - name: avogadro_constant
+            value: 6.022140857E+23
+            units: mol-1
+            prec: double
+            type: strict
+            relative_uncertainty: 1.2E-08
+            description: "
+              Number of particles (atoms, molecules) in one mole.
+            "
+          - name: boltzmann_constant
+            value: 1.3806485279E-23
+            units: J K-1
+            prec: double
+            type: strict
+            relative_uncertainty: 5.7E-07
+            description: "
+              Proportionality constant between the average kinetic energy
+              of particles in a gas and its temperature.
+            "
+          - name: stefan_boltzmann_constant
+            value: 5.67036713E-08
+            units: W m-2 K-4
+            prec: double
+            type: strict
+            relative_uncertainty: 2.3E-06
+            description: "
+              Proportionality constant between the power emitted by
+              a black body and the fourth power of its temperature, 
+              according to Stefan-Boltzmann's law.
+            "
+          - name: molar_gas_constant
+            value: 8.314459848
+            units: J mol-1 K-1
+            prec: double
+            type: strict
+            relative_uncertainty: 5.7E-07
+            description: "
+              Gas constant used in the ideal gas law. It is equivalent to
+              Boltzmann's constant espressed in J mol-1 K-1.
+            "
+          - name: molar_volume_of_ideal_gas
+            value: 22.71094713E-03
+            units: m3 mol-1
+            prec: double
+            type: strict
+            relative_uncertainty: 5.7E-07
+            description: "
+              Ideal gas molar volume as computed by the ideal gas law (RT/p)
+              at Standard Temperature and Pressure (STP: 273.15K, 100 kPa).
+            "
+    - GRS80:
+        description: "
+          Geodetic Reference System 1980.
+        "
+        citation: "
+          Moritz, H, Geodetic Reference System 1980. J. Geodesy, 74 128-133, 2000.
+        "
+        entries:
+          - name: geocentric_gravitational_constant
+            value: 3986005E+08
+            units: m3 s-2
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Product (GM) of the mass of the Earth (M) and the universal gravitational
+              constant (G).
+            "
+          - name: semimajor_axis
+            value: 6378137
+            units: m
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              The semi-major axis of Earth's reference ellipsoid.
+            "
+          - name: dynamic_form_factor
+            value: 108263E-08
+            units: none
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Mechanical ellipticity of Earth.
+            "
+          - name: angular_velocity
+            value: 7292115E-11
+            units: rad s-1
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Angular velocity of Earth's rotation.
+            "
+          - name: semiminor_axis
+            value: 6356752.3141
+            units: m
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              The semi-major axis of Earth's reference ellipsoid.
+              Derived constant.
+            "
+          - name: flattening
+            value: 0.00335281068118
+            units: none
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Defined as f = (semimajor_axis - semiminor_axis) / semimajor_axis.
+              Derived constant.
+            "
+          - name: reciprocal_flattening
+            value: 298.257222101
+            units: none
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Defined as 1/f. Derived constant.
+            "
+          - name: mean_radius
+            value: 6371008.7714
+            units: m
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Derived constant. Equal to (2 semimajor_axis + semiminor_axis) / 3.
+            "
+          - name: radius_of_sphere_of_same_surface
+            value: 6371007.1810
+            units: m
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Radius of Earth's reference sphere with same surface as ellipsoid's.
+              Derived constant
+            "
+          - name: radius_of_sphere_of_same_volume
+            value: 6371000.7900
+            units: m
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Radius of Earth's reference sphere with same volume as ellipsoid's.
+              Derived constant.
+            "
+    - SORCETIM2008:
+        description: "
+          NASA Solar Radiation and Climate Experiment (SORCE), Total Irradiance
+          Monitor (TIM)
+        "
+        citation: "
+          Kopp, G., Lawrence, G., and Rottman, G., The Total Irradiance Monitor (TIM):
+          Science results, Sol. Phys., 230, 129–139, 2005. doi:10.1007/s11207-005-7433-9.
+        "
+        entries:
+          - name: total_solar_irradiance
+            value: 1360.8
+            units: W m-2
+            prec: double
+            type: strict
+            uncertainty: 0.5
+            description: "
+              Most probable value of total solar irradiance representative of
+              solar minimum (aka solar constant).
+            "
+    - IAPWS1995:
+        description: "
+          International Association for the Properties of Water and Steam (IAPWS).
+          Thermodynamic Property Formulations 1995 (http://www.iapws.org)
+        "
+        citation: "
+          Wagner, W., and Pruss, A., The IAPWS Formulation 1995 for the Thermodynamic 
+          Properties of Ordinary Water Substance for General and Scientific Use,
+          J. Phys. Chem. Ref. Data, 31, 387-535, 2002. 
+        "
+        entries:
+          - name: water_molar_mass
+            value: 18.015268
+            units: g mol-1
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Molar mass of H2O.
+            "
+          - name: water_specific_gas_constant
+            value: 0.46151805
+            units: kJ kg-1 K-1
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Specific gas constant for water vapor.
+            "
+          - name: water_triple_point_temperature
+            value: 273.16
+            units: K
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Triple point temperature of H2O.
+            "
+          - name: water_triple_point_pressure
+            value: 611.655
+            units: Pa
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Triple point pressure of H2O.
+              Calculated from Eq. (6.4).
+            "
+          - name: liquid_water_triple_point_density
+            value: 999.793
+            units: kg m-3
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Triple point density of liquid H2O.
+              Calculated from Eq. (6.4).
+            "
+          - name: vapor_water_triple_point_density
+            value: 0.00485458
+            units: kg m-3
+            prec: double
+            type: strict
+            uncertainty: exact
+            description: "
+              Triple point density of vapor H2O.
+              Calculated from Eq. (6.4).
+            "
