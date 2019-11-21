@@ -1,0 +1,13 @@
+# This is an example of a user-requested list of physical constants
+# to be looked up in the dictionary by the CPCD parser and included
+# in the generate source code.
+
+  ASHandbook1964: [ pi, gamma ]
+  CODATA2014: 
+    - standard_acceleration_of_gravity
+    - speed_of_light_in_vacuum
+    - stefan_boltzmann_constant
+  GRS80: mean_radius
+  IAPWS1995: [ liquid_water_triple_point_density, vapor_water_triple_point_density ]
+  ASHandbook1964: square_root_of_2
+  ASHandbook1964: pi
